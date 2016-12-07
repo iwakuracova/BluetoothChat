@@ -21,16 +21,25 @@ import android.bluetooth.BluetoothDevice;
 import android.bluetooth.BluetoothServerSocket;
 import android.bluetooth.BluetoothSocket;
 import android.content.Context;
+import android.database.sqlite.SQLiteDatabase;
+import android.database.sqlite.SQLiteOpenHelper;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
+import android.widget.ListView;
+import android.widget.SimpleCursorAdapter;
 
 import com.example.android.common.logger.Log;
 
+import java.io.ByteArrayOutputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
-import java.io.OutputStream;
+import java.io.*;
 import java.util.UUID;
+
+import static android.content.Context.MODE_PRIVATE;
 
 /**
  * This class does all the work for setting up and managing Bluetooth
@@ -62,6 +71,7 @@ public class BluetoothChatService {
     private ConnectThread mConnectThread;
     private ConnectedThread mConnectedThread;
     private int mState;
+    private Context mContext;
 
     // Constants that indicate the current connection state
     public static final int STATE_NONE = 0;       // we're doing nothing
@@ -79,6 +89,7 @@ public class BluetoothChatService {
         mAdapter = BluetoothAdapter.getDefaultAdapter();
         mState = STATE_NONE;
         mHandler = handler;
+        mContext = context;
     }
 
     /**
@@ -471,32 +482,56 @@ public class BluetoothChatService {
 
         public void run() {
             Log.i(TAG, "BEGIN mConnectedThread");
-            byte[] buffer = new byte[1024 * 10/*1024*/];
+            byte[] buffer = new byte[1024 * 2];
             int bytes;
+
+            // output data
+            /*
+            ByteArrayOutputStream out = null;
+            out = new ByteArrayOutputStream();
+            */
 
             // Keep listening to the InputStream while connected
             while (mState == STATE_CONNECTED) {
                 try {
-                    while(true){
+                    FileOutputStream fileOutputStream = mContext.openFileOutput("myfile.txt", mContext.MODE_PRIVATE);
+                    // TODO: データ読込直前でDB削除
+                    Log.d(TAG, "-------------------------/n");
+                    while((bytes = mmInStream.read(buffer)) != -1){ // NO DATA
                         // Read from the InputStream
-                        bytes = mmInStream.read(buffer);
-                        if(bytes < 1) break;
-                        Log.d(TAG, "====== input ===== " + new String(buffer, 0, bytes));
+                        // bytes = mmInStream.read(buffer, 0, 1);
+                        // TODO: push ファイル保存 iwakura
+                        ///out.write(buffer);
+                        fileOutputStream.write(buffer);
+                        // Log.d(TAG, new String(buffer, 0, bytes));
                     }
 
                     // Send the obtained bytes to the UI Activity
                     mHandler.obtainMessage(Constants.MESSAGE_READ, bytes, -1, buffer)
                             .sendToTarget();
+                } catch (FileNotFoundException e) {
+                    Log.e(TAG, "FileNotFoundException", e);
                 } catch (IOException e) {
                     Log.e(TAG, "disconnected", e);
                     connectionLost();
                     // Start the service over to restart listening mode
                     BluetoothChatService.this.start();
-                    break;
-                } catch(Exception e){
+                    // break;
+                } catch(Throwable e){
                     Log.e(TAG, "ERROR !!! ", e);
 
                 }
+
+                // データ解析
+                /*
+                String recList[] = out.toString().split("/*", 0);
+                for(String rec : recList)
+                    Log.d(TAG, rec);
+                */
+
+                // TODO: Sqlite Insert
+
+
 
             }
         }
@@ -509,7 +544,7 @@ public class BluetoothChatService {
         public void write(byte[] buffer) {
             try {
                 mmOutStream.write(buffer);
-                Log.d(TAG, " =========== KOBA ======" + new String(buffer));
+                // Log.d(TAG, " =======" + new String(buffer));
 
                 // Share the sent message back to the UI Activity
                 mHandler.obtainMessage(Constants.MESSAGE_WRITE, -1, -1, buffer)
@@ -524,6 +559,31 @@ public class BluetoothChatService {
                 mmSocket.close();
             } catch (IOException e) {
                 Log.e(TAG, "close() of connect socket failed", e);
+            }
+        }
+
+        /*****************************************
+         * SQL Lite SAVE & LOAD
+         *****************************************/
+        static final String DB = "sqlite_sample.db";
+        static final int DB_VERSION = 1;
+        static final String CREATE_TABLE = "create table mytable ( _id integer primary key autoincrement, data integer not null );";
+        static final String DROP_TABLE = "drop table mytable;";
+
+        SQLiteDatabase mydb;
+
+        private SimpleCursorAdapter myadapter;
+
+        private  class MySQLiteOpenHelper extends SQLiteOpenHelper {
+            public MySQLiteOpenHelper(Context c) {
+                super(c, DB, null, DB_VERSION);
+            }
+            public void onCreate(SQLiteDatabase db) {
+                db.execSQL(CREATE_TABLE);
+            }
+            public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
+                db.execSQL(DROP_TABLE);
+                onCreate(db);
             }
         }
     }

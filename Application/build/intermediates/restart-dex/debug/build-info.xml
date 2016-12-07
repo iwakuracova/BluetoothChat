@@ -5,26 +5,22 @@
     density="tvdpi"
     format="8"
     plugin-version="2.2.2"
-    timestamp="17876551574214"
+    timestamp="23385519854900"
     token="-8098844032104415909"
-    verifier="FULL_BUILD_REQUESTED" >
+    verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="439" />
+        duration="0" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="411" />
+        duration="0" />
     <task
         name="verifier"
-        duration="75" />
-
-    <artifact
-        location="/Users/iwakura/AndroidStudioProjects/BluetoothChat/Application/build/outputs/apk/Application-debug.apk"
-        type="MAIN" />
+        duration="0" />
 
     <build
         timestamp="17876551574214"
@@ -33,5 +29,22 @@
             location="/Users/iwakura/AndroidStudioProjects/BluetoothChat/Application/build/outputs/apk/Application-debug.apk"
             type="MAIN" />
     </build>
+    <build
+        timestamp="20566412437103"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="/Users/iwakura/AndroidStudioProjects/BluetoothChat/Application/build/intermediates/transforms/dex/debug/folders/1000/10/MPAndroidChart-v2.1.6_a590a24998539928b0075a431ee59609635f7219/classes.dex"
+            type="DEX" />
+    </build>
+    <build
+        timestamp="23307297261766"
+        verifier="FIELD_ADDED" >
+        <artifact
+            location="/Users/iwakura/AndroidStudioProjects/BluetoothChat/Application/build/intermediates/transforms/dex/debug/folders/1000/5/slice_6/classes.dex"
+            type="DEX" />
+    </build>
+    <build
+        timestamp="23385519854900"
+        verifier="COLD_SWAP_REQUESTED" />
 
 </instant-run>
