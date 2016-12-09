@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "/Users/iwakura/AndroidStudioProjects/BluetoothChat/Application/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v18/values-v18.xml",
+        "outputFile": "/Users/fron14/AndroidStudioProjects/BluetoothChat/Application/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v18/values-v18.xml",
         "map": [
             {
                 "to": {
@@ -11,7 +11,7 @@
                     "endOffset": 99
                 },
                 "from": {
-                    "file": "/Users/iwakura/AndroidStudioProjects/BluetoothChat/Application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v18/values-v18.xml",
+                    "file": "/Users/fron14/AndroidStudioProjects/BluetoothChat/Application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v18/values-v18.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,
