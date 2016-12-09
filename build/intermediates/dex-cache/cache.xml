@@ -3,93 +3,93 @@
 
     <item
         is-multidex="true"
-        jar="/Users/iwakura/AndroidStudioProjects/BluetoothChat/Application/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="26caa89dfd5ae6ae667e2bd87e5bded7f1ba37e8">
-        <dex dex="/Users/iwakura/AndroidStudioProjects/BluetoothChat/Application/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_ac5fa2ffdf479351009d316cab879c24cf04e1f3/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/iwakura/AndroidStudioProjects/BluetoothChat/Application/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.1.1/jars/classes.jar"
+        jar="/Users/fron14/AndroidStudioProjects/BluetoothChat/Application/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.1.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.1"
         sha1="f62e763609f65e47dc6c498760a4accf02776788">
-        <dex dex="/Users/iwakura/AndroidStudioProjects/BluetoothChat/Application/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-24.1.1_f43bcc096ff160e764232af1252011bf7c12f053/classes.dex" />
+        <dex dex="/Users/fron14/AndroidStudioProjects/BluetoothChat/Application/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-24.1.1_6eea56e59a1ca2bb0afd4e409690dec40c8afb4b/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/iwakura/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/24.1.1/support-annotations-24.1.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="3af19f153122737b372622fa6c81dd11a1c6b999">
-        <dex dex="/Users/iwakura/AndroidStudioProjects/BluetoothChat/Application/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-24.1.1_8da40689d704d524dc302672f7fc1d311ecbdac7/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/iwakura/AndroidStudioProjects/BluetoothChat/Application/build/intermediates/exploded-aar/com.android.support/support-v4/24.1.1/jars/libs/internal_impl-24.1.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="f78c2f395cb096f9dc1dc07e729922b8fcd3c4f5">
-        <dex dex="/Users/iwakura/AndroidStudioProjects/BluetoothChat/Application/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.1.1_5767f67eddbc485962294bbe7c119f11021acb16/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/iwakura/AndroidStudioProjects/BluetoothChat/Application/build/intermediates/exploded-aar/com.android.support/cardview-v7/24.1.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="4add8aa95c9f4e9a2ad64b7e2bf08e97e28955c1">
-        <dex dex="/Users/iwakura/AndroidStudioProjects/BluetoothChat/Application/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-cardview-v7-24.1.1_abd66e1147c08845d0655f4f900cb0998e7aeda5/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/iwakura/AndroidStudioProjects/BluetoothChat/Application/build/intermediates/exploded-aar/com.android.support/support-v4/24.1.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="6d7d803871e3203465f71a163e7af104f807b446">
-        <dex dex="/Users/iwakura/AndroidStudioProjects/BluetoothChat/Application/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-24.1.1_b8827cceb64668b40d6deca8136cdb2c093a98f3/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/iwakura/AndroidStudioProjects/BluetoothChat/Application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/jars/classes.jar"
+        jar="/Users/fron14/AndroidStudioProjects/BluetoothChat/Application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.1"
         sha1="1256c10604bb098490eab070d76754ac5ceab35c">
-        <dex dex="/Users/iwakura/AndroidStudioProjects/BluetoothChat/Application/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-24.1.1_a813a8fc833fd8a73e0ca7ef92a278203596f792/classes.dex" />
+        <dex dex="/Users/fron14/AndroidStudioProjects/BluetoothChat/Application/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-24.1.1_fd2db6e828d5d16039a5d2bda925dc59010c4f6d/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/iwakura/AndroidStudioProjects/BluetoothChat/Application/build/intermediates/exploded-aar/com.android.support/gridlayout-v7/24.1.1/jars/classes.jar"
+        jar="/Users/fron14/AndroidStudioProjects/BluetoothChat/Application/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.1"
-        sha1="8a5380ddd58f4f8946ddade4c64dd77de4a836d5">
-        <dex dex="/Users/iwakura/AndroidStudioProjects/BluetoothChat/Application/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-gridlayout-v7-24.1.1_aeee4196d4e77fa4b4835f046724849c9e2c1b42/classes.dex" />
+        sha1="1e234f9d095e09440e267bcdc895f8ff689f5d61">
+        <dex dex="/Users/fron14/AndroidStudioProjects/BluetoothChat/Application/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_5c7fba8a37e337111089a334ac0f7a946acbbd59/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/iwakura/AndroidStudioProjects/BluetoothChat/Application/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="99f323f82bbe9d91e8a7209fdb10289e3d2aaf39">
-        <dex dex="/Users/iwakura/AndroidStudioProjects/BluetoothChat/Application/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_9fdade60bd606395e3510b375e5a60e613ef049d/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/iwakura/AndroidStudioProjects/BluetoothChat/Application/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.1.1/jars/classes.jar"
+        jar="/Users/fron14/AndroidStudioProjects/BluetoothChat/Application/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.1.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.1"
         sha1="c936c1bd42f0c018c18920c7bec619ef056b24f8">
-        <dex dex="/Users/iwakura/AndroidStudioProjects/BluetoothChat/Application/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-24.1.1_44ba517bda01795c047736fbc03d5b6fd5577c21/classes.dex" />
+        <dex dex="/Users/fron14/AndroidStudioProjects/BluetoothChat/Application/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-24.1.1_028ad48fe3709704d47387777540e4f0f1cf430e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/fron14/AndroidStudioProjects/BluetoothChat/Application/build/intermediates/exploded-aar/com.android.support/support-v4/24.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="6d7d803871e3203465f71a163e7af104f807b446">
+        <dex dex="/Users/fron14/AndroidStudioProjects/BluetoothChat/Application/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-24.1.1_03f81b6fdda66a0ee933aa7774c15b910456bb3b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/fron14/AndroidStudioProjects/BluetoothChat/Application/build/intermediates/exploded-aar/com.android.support/cardview-v7/24.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="4add8aa95c9f4e9a2ad64b7e2bf08e97e28955c1">
+        <dex dex="/Users/fron14/AndroidStudioProjects/BluetoothChat/Application/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-cardview-v7-24.1.1_249272a44f9056d24ed29271850bb7fca3433f4e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/fron14/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/24.1.1/support-annotations-24.1.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="3af19f153122737b372622fa6c81dd11a1c6b999">
+        <dex dex="/Users/fron14/AndroidStudioProjects/BluetoothChat/Application/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-24.1.1_a4e48fb22168a4b1b1fdcca6a71872ec77f65c1a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/fron14/AndroidStudioProjects/BluetoothChat/Application/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="958eff0a8f54b6aa8804cbede961d869b9b6252c">
+        <dex dex="/Users/fron14/AndroidStudioProjects/BluetoothChat/Application/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_b00e73068fc736d2298974820818a1065b3ee327/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/fron14/AndroidStudioProjects/BluetoothChat/Application/build/intermediates/exploded-aar/com.android.support/gridlayout-v7/24.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="8a5380ddd58f4f8946ddade4c64dd77de4a836d5">
+        <dex dex="/Users/fron14/AndroidStudioProjects/BluetoothChat/Application/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-gridlayout-v7-24.1.1_7659e7c381db82a94c8ed7fbdaf99fe77b61de95/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/fron14/AndroidStudioProjects/BluetoothChat/Application/build/intermediates/exploded-aar/com.android.support/support-v4/24.1.1/jars/libs/internal_impl-24.1.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="f78c2f395cb096f9dc1dc07e729922b8fcd3c4f5">
+        <dex dex="/Users/fron14/AndroidStudioProjects/BluetoothChat/Application/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.1.1_d04c4598fd9f152191e67b87731043e08de6f0bc/classes.dex" />
     </item>
 
 </items>

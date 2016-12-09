@@ -24,9 +24,11 @@ import android.content.Context;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
+import android.provider.SyncStateContract;
 
 import com.example.android.common.logger.Log;
 
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
@@ -473,6 +475,7 @@ public class BluetoothChatService {
             Log.i(TAG, "BEGIN mConnectedThread");
             byte[] buffer = new byte[1024 * 10/*1024*/];
             int bytes;
+            String  s1 = "", s2 = "";
 
             // Keep listening to the InputStream while connected
             while (mState == STATE_CONNECTED) {
@@ -482,6 +485,8 @@ public class BluetoothChatService {
                         bytes = mmInStream.read(buffer);
                         if(bytes < 1) break;
                         Log.d(TAG, "====== input ===== " + new String(buffer, 0, bytes));
+                        s2 = new String(buffer, 0 , bytes);
+                        s1 = s1 + s2;
                     }
 
                     // Send the obtained bytes to the UI Activity
@@ -498,6 +503,10 @@ public class BluetoothChatService {
 
                 }
 
+            }
+
+            if(!s2==null){
+                //TODO: 取得したデータをMainActivityに送る。
             }
         }
 
