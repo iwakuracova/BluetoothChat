@@ -21,7 +21,7 @@
 
     <uses-sdk
         android:minSdkVersion="11"
-        android:targetSdkVersion="24" />
+        android:targetSdkVersion="23" />
 
     <!-- Min/target SDK versions (<uses-sdk>) managed by build.gradle -->
 
@@ -48,6 +48,7 @@
             android:configChanges="orientation|keyboardHidden"
             android:label="@string/select_device"
             android:theme="@android:style/Theme.Holo.Dialog" />
+        <activity android:name="com.example.android.bluetoothchat.ShowGraphActivity" />
     </application>
 
 </manifest>

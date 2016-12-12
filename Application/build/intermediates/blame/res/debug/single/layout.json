@@ -156,6 +156,10 @@
         "source": "/Users/fron14/AndroidStudioProjects/BluetoothChat/Application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/layout/abc_action_bar_up_container.xml"
     },
     {
+        "merged": "/Users/fron14/AndroidStudioProjects/BluetoothChat/Application/build/intermediates/res/merged/debug/layout/activity_show_graph.xml",
+        "source": "/Users/fron14/AndroidStudioProjects/BluetoothChat/Application/src/main/res/layout/activity_show_graph.xml"
+    },
+    {
         "merged": "/Users/fron14/AndroidStudioProjects/BluetoothChat/Application/build/intermediates/res/merged/debug/layout/abc_activity_chooser_view_list_item.xml",
         "source": "/Users/fron14/AndroidStudioProjects/BluetoothChat/Application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/layout/abc_activity_chooser_view_list_item.xml"
     },
