@@ -2,8 +2,10 @@ package com.example.android.bluetoothchat;
 
 import android.app.Activity;
 import android.graphics.Color;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.SeekBar;
 import android.widget.TextView;
@@ -29,6 +31,10 @@ public class ShowGraphActivity extends Activity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_show_graph);
+
+        //add ActionBar "Back to Home"
+        android.app.ActionBar actionBar  = getActionBar();
+        actionBar.setDisplayHomeAsUpEnabled(true);
 
         mLineChart = (LineChart) findViewById(R.id.chart1);
 
@@ -119,9 +125,18 @@ public class ShowGraphActivity extends Activity {
         rightAxis.setEnabled(false);
 
     }
-    /**
-     * Action to tap "Back to Main" Button
-     */
-    public void onBackButtonClick(View view){finish();}
+
+    //set ActionBar "Back to Home"
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item){
+        switch (item.getItemId()){
+            case android.R.id.home:
+                finish();
+                return true;
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
+
 
 }

@@ -57,10 +57,12 @@
         android:gravity="right"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
+        <!--
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="onBackButtonClick"
             android:text="@string/bt_gph_back"/>
+        -->
 
 </RelativeLayout>
