@@ -385,6 +385,7 @@
     <string name="abc_shareactionprovider_share_with_application">Share with %s</string>
     <string name="abc_toolbar_collapse_description">Collapse</string>
     <string name="app_name">BluetoothChat</string>
+    <string name="bt_gph_back">Back to Main</string>
     <string name="bt_not_enabled_leaving">Bluetooth was not enabled. Leaving Bluetooth Chat.</string>
     <string name="button_scan">Scan for devices</string>
     <string name="discoverable">Make discoverable</string>
@@ -393,9 +394,10 @@
     <string name="insecure_connect">Connect a device - Insecure</string>
     <string name="intro_message">
         
-            サンプルの使い方
+            らくちんアプリサンプル
         
     </string>
+    <string name="line_chart">See a Line chart</string>
     <string name="none_found">No devices found</string>
     <string name="none_paired">No devices have been paired</string>
     <string name="not_connected">You are not connected to a device</string>

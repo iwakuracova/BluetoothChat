@@ -3,15 +3,6 @@
 
     <item
         is-multidex="true"
-        jar="/Users/fron14/.gradle/caches/modules-2/files-2.1/com.github.PhilJay/MPAndroidChart/v2.1.5/34b9f39e5343d39e205fb7617e734601dc4868e7/MPAndroidChart-v2.1.5.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="34b9f39e5343d39e205fb7617e734601dc4868e7">
-        <dex dex="/Users/fron14/AndroidStudioProjects/BluetoothChat/Application/build/intermediates/transforms/dex/debug/folders/1000/10/MPAndroidChart-v2.1.5_5c96cc582a507d4f4bfcea7ccbb7cf92d62558f6/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/Users/fron14/AndroidStudioProjects/BluetoothChat/Application/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.1.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
@@ -30,11 +21,20 @@
     </item>
     <item
         is-multidex="true"
+        jar="/Users/fron14/.gradle/caches/modules-2/files-2.1/com.github.PhilJay/MPAndroidChart/v3.0.1/369f9aa48a629b4e92557b37326f42dc3de796e4/MPAndroidChart-v3.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="369f9aa48a629b4e92557b37326f42dc3de796e4">
+        <dex dex="/Users/fron14/AndroidStudioProjects/BluetoothChat/Application/build/intermediates/transforms/dex/debug/folders/1000/10/MPAndroidChart-v3.0.1_3e5e0c3068951c21413c7492ed4792da4c199b9d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/Users/fron14/AndroidStudioProjects/BluetoothChat/Application/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.1"
-        sha1="3d316602c3b2a9bfe6e4ed34219af8df89d33a05">
+        sha1="e2ffa38ab3790298ce753f3af708b9e97882cf0a">
         <dex dex="/Users/fron14/AndroidStudioProjects/BluetoothChat/Application/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_5c7fba8a37e337111089a334ac0f7a946acbbd59/classes.dex" />
     </item>
     <item
@@ -79,7 +79,7 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.1"
-        sha1="b7de45dde79f93cc45ab70cf99a7c7d32ea23066">
+        sha1="c238e6ca4f40e18e9d2367723bbba180812588fd">
         <dex dex="/Users/fron14/AndroidStudioProjects/BluetoothChat/Application/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_b00e73068fc736d2298974820818a1065b3ee327/classes.dex" />
     </item>
     <item
