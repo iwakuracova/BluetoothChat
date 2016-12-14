@@ -4,34 +4,47 @@
     api-level="21"
     density="tvdpi"
     format="8"
-    plugin-version="2.2.2"
-    timestamp="17876551574214"
-    token="-8098844032104415909"
-    verifier="FULL_BUILD_REQUESTED" >
+    plugin-version="2.2.3"
+    timestamp="20832366482605"
+    token="2296011008997175010"
+    verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="439" />
+        duration="1098" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="411" />
+        duration="122" />
     <task
         name="verifier"
-        duration="75" />
+        duration="0" />
 
     <artifact
-        location="/Users/iwakura/AndroidStudioProjects/BluetoothChat/Application/build/outputs/apk/Application-debug.apk"
-        type="MAIN" />
+        location="/Users/fron14/AndroidStudioProjects/BluetoothChat/Application/build/intermediates/instant-run-resources/resources-debug.ir.ap_"
+        type="RESOURCES" />
+    <artifact
+        location="/Users/fron14/AndroidStudioProjects/BluetoothChat/Application/build/intermediates/transforms/dex/debug/folders/1000/5/slice_6/classes.dex"
+        type="DEX" />
 
     <build
-        timestamp="17876551574214"
-        verifier="FULL_BUILD_REQUESTED" >
+        timestamp="19669728207007"
+        verifier="BINARY_MANIFEST_FILE_CHANGE" >
         <artifact
-            location="/Users/iwakura/AndroidStudioProjects/BluetoothChat/Application/build/outputs/apk/Application-debug.apk"
+            location="/Users/fron14/AndroidStudioProjects/BluetoothChat/Application/build/outputs/apk/Application-debug.apk"
             type="MAIN" />
+    </build>
+    <build
+        timestamp="20832366482605"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="/Users/fron14/AndroidStudioProjects/BluetoothChat/Application/build/intermediates/instant-run-resources/resources-debug.ir.ap_"
+            type="RESOURCES" />
+        <artifact
+            location="/Users/fron14/AndroidStudioProjects/BluetoothChat/Application/build/intermediates/transforms/dex/debug/folders/1000/5/slice_6/classes.dex"
+            type="DEX" />
     </build>
 
 </instant-run>

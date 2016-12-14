@@ -24,9 +24,11 @@ import android.content.Context;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
+import android.provider.SyncStateContract;
 
 import com.example.android.common.logger.Log;
 
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
@@ -499,6 +501,7 @@ public class BluetoothChatService {
                 }
 
             }
+
         }
 
         /**

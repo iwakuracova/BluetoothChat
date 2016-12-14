@@ -1,10 +1,10 @@
 [
     {
-        "merged": "/Users/iwakura/AndroidStudioProjects/BluetoothChat/Application/build/intermediates/res/merged/debug/drawable-xhdpi/ic_action_device_access_bluetooth_searching.png",
-        "source": "/Users/iwakura/AndroidStudioProjects/BluetoothChat/Application/src/main/res/drawable-xhdpi/ic_action_device_access_bluetooth_searching.png"
+        "merged": "/Users/fron14/AndroidStudioProjects/BluetoothChat/Application/build/intermediates/res/merged/debug/drawable-xhdpi/ic_action_device_access_bluetooth_searching.png",
+        "source": "/Users/fron14/AndroidStudioProjects/BluetoothChat/Application/src/main/res/drawable-xhdpi/ic_action_device_access_bluetooth_searching.png"
     },
     {
-        "merged": "/Users/iwakura/AndroidStudioProjects/BluetoothChat/Application/build/intermediates/res/merged/debug/drawable-xhdpi/ic_launcher.png",
-        "source": "/Users/iwakura/AndroidStudioProjects/BluetoothChat/Application/src/main/res/drawable-xhdpi/ic_launcher.png"
+        "merged": "/Users/fron14/AndroidStudioProjects/BluetoothChat/Application/build/intermediates/res/merged/debug/drawable-xhdpi/ic_launcher.png",
+        "source": "/Users/fron14/AndroidStudioProjects/BluetoothChat/Application/src/main/res/drawable-xhdpi/ic_launcher.png"
     }
 ]
