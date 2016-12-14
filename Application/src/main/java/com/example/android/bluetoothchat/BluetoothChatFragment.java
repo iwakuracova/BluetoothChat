@@ -20,6 +20,7 @@ import android.app.ActionBar;
 import android.app.Activity;
 import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothDevice;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
@@ -44,7 +45,11 @@ import android.widget.Toast;
 
 import com.example.android.common.logger.Log;
 
+import java.io.BufferedOutputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
 import java.util.Arrays;
+
 
 /**
  * This fragment controls Bluetooth to communicate with other devices.
@@ -158,7 +163,7 @@ public class BluetoothChatFragment extends Fragment {
     }
 
     /**
-     * Set up the UI and background operations for chat.
+     * Set up the UI and background operationsƒ for chat.
      */
     private void setupChat() {
         Log.d(TAG, "setupChat()");
@@ -177,6 +182,8 @@ public class BluetoothChatFragment extends Fragment {
                 // Send a message using content of the edit text widget
                 View view = getView();
                 if (null != view) {
+                    mChatService.IsFileSave = false;
+
                     TextView textView = (TextView) view.findViewById(R.id.edit_text_out);
                     String message = textView.getText().toString();
                     sendMessage(message);
@@ -193,6 +200,8 @@ public class BluetoothChatFragment extends Fragment {
                 // Send a message using content of the edit text widget
                 View view = getView();
                 if (null != view) {
+                    mChatService.IsFileSave = false;
+                    mChatService.initFile(); // 初期化
                     sendMessage("*");
                 }
             }
@@ -206,6 +215,8 @@ public class BluetoothChatFragment extends Fragment {
                 // Send a message using content of the edit text widget
                 View view = getView();
                 if (null != view) {
+                    mChatService.IsFileSave = true;
+                    mChatService.initFile(); // 初期化
                     sendMessage("D*");
                 }
             }
@@ -340,10 +351,13 @@ public class BluetoothChatFragment extends Fragment {
                     break;
                 case Constants.MESSAGE_READ:
                     byte[] readBuf = (byte[]) msg.obj;
+                    // sampleFileOutput(readBuf);
                     // construct a string from the valid bytes in the buffer
                     String readMessage = new String(readBuf, 0, msg.arg1);
+                    // String readMessage = "finish";
                     mConversationArrayAdapter.add(mConnectedDeviceName + ":  " + readMessage);
                     mChatService.write(readBuf);
+                    // mChatService.write(readMessage.getBytes());
                     break;
                 case Constants.MESSAGE_DEVICE_NAME:
                     // save the connected device's name
@@ -436,5 +450,27 @@ public class BluetoothChatFragment extends Fragment {
         }
         return false;
     }
+
+    /***
+     * ファイル書き込み
+     * http://d.hatena.ne.jp/tanaponchikidun/20120705/1341502691
+     */
+    /*
+    private void sampleFileOutput(byte[] out){
+        try {
+
+            FileOutputStream fileOutStm = null;
+            fileOutStm = new FileOutputStream(LOCAL_FILE);
+            BufferedOutputStream bos = new BufferedOutputStream(fileOutStm);
+            bos.write(out);
+            bos.flush();
+            fileOutStm.close();
+        } catch (IOException e) {
+            // TODO 自動生成された catch ブロック
+            e.printStackTrace();
+        }
+    }
+    */
+
 
 }
