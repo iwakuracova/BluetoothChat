@@ -4,47 +4,47 @@
     api-level="21"
     density="tvdpi"
     format="8"
-    plugin-version="2.2.2"
-    timestamp="23385519854900"
-    token="-8098844032104415909"
+    plugin-version="2.2.3"
+    timestamp="20832366482605"
+    token="2296011008997175010"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="0" />
+        duration="1098" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="0" />
+        duration="122" />
     <task
         name="verifier"
         duration="0" />
 
+    <artifact
+        location="/Users/fron14/AndroidStudioProjects/BluetoothChat/Application/build/intermediates/instant-run-resources/resources-debug.ir.ap_"
+        type="RESOURCES" />
+    <artifact
+        location="/Users/fron14/AndroidStudioProjects/BluetoothChat/Application/build/intermediates/transforms/dex/debug/folders/1000/5/slice_6/classes.dex"
+        type="DEX" />
+
     <build
-        timestamp="17876551574214"
-        verifier="FULL_BUILD_REQUESTED" >
+        timestamp="19669728207007"
+        verifier="BINARY_MANIFEST_FILE_CHANGE" >
         <artifact
-            location="/Users/iwakura/AndroidStudioProjects/BluetoothChat/Application/build/outputs/apk/Application-debug.apk"
+            location="/Users/fron14/AndroidStudioProjects/BluetoothChat/Application/build/outputs/apk/Application-debug.apk"
             type="MAIN" />
     </build>
     <build
-        timestamp="20566412437103"
+        timestamp="20832366482605"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
-            location="/Users/iwakura/AndroidStudioProjects/BluetoothChat/Application/build/intermediates/transforms/dex/debug/folders/1000/10/MPAndroidChart-v2.1.6_a590a24998539928b0075a431ee59609635f7219/classes.dex"
-            type="DEX" />
-    </build>
-    <build
-        timestamp="23307297261766"
-        verifier="FIELD_ADDED" >
+            location="/Users/fron14/AndroidStudioProjects/BluetoothChat/Application/build/intermediates/instant-run-resources/resources-debug.ir.ap_"
+            type="RESOURCES" />
         <artifact
-            location="/Users/iwakura/AndroidStudioProjects/BluetoothChat/Application/build/intermediates/transforms/dex/debug/folders/1000/5/slice_6/classes.dex"
+            location="/Users/fron14/AndroidStudioProjects/BluetoothChat/Application/build/intermediates/transforms/dex/debug/folders/1000/5/slice_6/classes.dex"
             type="DEX" />
     </build>
-    <build
-        timestamp="23385519854900"
-        verifier="COLD_SWAP_REQUESTED" />
 
 </instant-run>

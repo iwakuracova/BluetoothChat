@@ -22,9 +22,9 @@
     <ListView
         android:id="@+id/in"
         android:layout_width="match_parent"
-        android:layout_height="371dp"
         android:stackFromBottom="true"
-        android:transcriptMode="alwaysScroll" />
+        android:transcriptMode="alwaysScroll"
+        android:layout_height="300dp" />
 
     <LinearLayout
         android:layout_width="match_parent"
